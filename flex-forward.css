@@ -1,0 +1,516 @@
+/**************************************
+
+Flex Forward: a front-end CSS 12 column grid framework
+Written by: Chris Boren (@ChrisBoren)
+Version: 0.0.2601021 Alpha
+
+A simple CSS-Only front-end framework designed to speed up implemenatation of
+flexbox elements in a traditional responsive grid system.
+
+Supported Browsers: Edge, Safari (Webkit), Chrome, FireFox, and Opera.
+
+----------
+Copyright and License 
+Copyright 2015 Christopher Boren
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+***************************************/
+
+/* Set up containers, rows, and columns */
+
+.ff-flex{
+	display:flex;
+}
+
+.ff-container{
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	align-self:flex-start;
+	align-content: flex-start;
+	flex-grow:0;
+}
+
+.ff-row{
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	flex-wrap: wrap;
+}
+
+.ff-column{
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	flex-wrap: wrap;
+}
+
+
+/* Individual widths for the grid */
+.ff-1, .ff-2, .ff-3, .ff-4, .ff-5, .ff-6, .ff-7, .ff-8, .ff-9, .ff-10, .ff-11, .ff-12 {
+
+}
+
+.ff-padded{
+	padding:0px 10px 0px 10px;
+}
+
+.ff-12g, .ff-100p {
+	width: 100%;
+}
+
+.ff-11g {
+	width: 91.667%;
+}
+.ff-10g {
+	width: 83.333%;
+}
+
+.ff-9g, .ff-75p {
+	width: 75%;
+}
+
+.ff-8g, .ff-67p {
+	width: 66.667%;
+}
+
+.ff-7g {
+	width: 58.333%;
+}
+
+.ff-6g, .ff-50p{
+	width: 50%;
+}
+
+.ff-5g {
+	width: 41.667%;
+}
+
+.ff-4g, .ff-33p {
+	width: 33.333%;
+}
+
+.ff-3g, .ff-25p {
+	width: 25%;
+}
+
+.ff-2g {
+	width: 16.667%;
+}
+
+.ff-1g {
+	width: 8.333%;
+}
+
+.ff-visible-sm, .ff-visible-md, .ff-visible-lg, .ff-visible-xl{
+	display:none;
+	visibility: hidden;
+}
+
+
+
+/***********
+Allignment Classes
+***********/
+
+.ff-left{
+	text-align: left;
+}
+
+.ff-right{
+	text-align: right;
+}
+
+.ff-center{
+	text-align: center;
+}
+
+.ff-nowrap{
+	flex-wrap:nowrap;
+}
+
+/* Justify-Content */
+
+.ff-start{
+	justify-content:flex-start;
+}
+
+.ff-end{
+	justify-content:flex-end;
+}
+
+.ff-center{
+	justify-content:center;
+}
+
+.ff-space-between{
+	justify-content:space-between;
+}
+
+.ff-space-around{
+	justify-content:space-around;
+}
+
+.ff-justify{
+	flex-grow:1;
+}
+
+/* Align Self */
+.ff-self-start{
+	align-self:flex-start;
+}
+
+.ff-self-end{
+	align-self:flex-end;
+}
+
+.ff-self-center{
+	align-self:center;
+}
+
+.ff-self-stretch{
+	align-self:stretch;
+}
+
+.ff-self-baseline{
+	align-self:baseline;
+}
+
+/* Align Itms*/
+
+.ff-items-start{
+	align-items:flex-start;
+}
+
+.ff-items-end{
+	align-items:flex-end;
+}
+
+.ff-items-center{
+	align-items:center;
+}
+
+.ff-items-stretch{
+	align-items:stretch;
+}
+
+.ff-items-baseline{
+	align-items:baseline;
+}
+
+/* Align Content */
+
+.ff-content-start{
+	align-content:flex-start;
+}
+
+.ff-content-end{
+	align-content:flex-end;
+}
+
+.ff-content-center{
+	align-content:center;
+}
+
+.ff-content-stretch{
+	align-content:stretch;
+}
+
+.ff-content-space-between{
+	align-content:space-between;
+}
+
+.ff-content-space-around{
+	align-content:space-around;
+}
+
+
+/* Extra Small */
+@media only screen and (max-width:479px){
+	    
+	/*	.ff-1g, .ff-2g, .ff-3g, .ff-4g, .ff-5g, .ff-6g, .ff-7g, .ff-8g, .ff-9g, .ff-10g, .ff-11g, .ff-12g{
+			width: 100%; 
+		}
+	*/
+		.ff-12-sm {
+			width: 100%;
+		}
+
+		.ff-11-sm {
+			width: 91.667%;
+		}
+		.ff-10-sm {
+			width: 83.333%;
+		}
+
+		.ff-9-sm {
+			width: 75%;
+		}
+
+		.ff-8-sm {
+			width: 66.667%;
+		}
+
+		.ff-7-sm {
+			width: 58.333%;
+		}
+
+		.ff-6-sm {
+			width: 50%;
+		}
+
+		.ff-5-sm {
+			width: 41.667%;
+		}
+
+		.ff-4-sm {
+			width: 33.333%;
+		}
+
+		.ff-3-sm {
+			width: 25%;
+		}
+
+		.ff-2-sm {
+			width: 16.667%;
+		}
+
+		.ff-1-sm {
+			width: 8.333%;
+		}
+
+		.ff-hidden-sm{
+			display:hidden;
+			visibility: none;
+		}
+
+		.ff-visible-sm{
+			display:flex;
+			visibility: visible;
+		}
+
+}
+
+
+/* Small */
+
+@media only screen and (min-width: 480px){ 
+	    
+	/*	.ff-1g, .ff-2g, .ff-3g, .ff-4g, .ff-5g, .ff-6g, .ff-7g, .ff-8g, .ff-9g, .ff-10g, .ff-11g, .ff-12g{
+			width: 100%; 
+		}
+	*/
+		.ff-12-md {
+			width: 100%;
+		}
+
+		.ff-11-md {
+			width: 91.667%;
+		}
+		.ff-10-md {
+			width: 83.333%;
+		}
+
+		.ff-9-md {
+			width: 75%;
+		}
+
+		.ff-8-md {
+			width: 66.667%;
+		}
+
+		.ff-7-md {
+			width: 58.333%;
+		}
+
+		.ff-6-md {
+			width: 50%;
+		}
+
+		.ff-5-md {
+			width: 41.667%;
+		}
+
+		.ff-4-md {
+			width: 33.333%;
+		}
+
+		.ff-3-md {
+			width: 25%;
+		}
+
+		.ff-2-md {
+			width: 16.667%;
+		}
+
+		.ff-1-md {
+			width: 8.333%;
+		}
+
+		.ff-hidden-md{
+			display:hidden;
+			visibility: none;
+		}
+
+		.ff-visible-md{
+			display:flex;
+			visibility: visible;
+		}
+
+}
+
+/* Medium*/
+
+@media only screen and (min-width: 768px){ 
+	    
+	/*	.ff-1g, .ff-2g, .ff-3g, .ff-4g, .ff-5g, .ff-6g, .ff-7g, .ff-8g, .ff-9g, .ff-10g, .ff-11g, .ff-12g{
+			width: 100%; 
+		}
+	*/
+		.ff-12-lg {
+			width: 100%;
+		}
+
+		.ff-11-lg {
+			width: 91.667%;
+		}
+		.ff-10-lg {
+			width: 83.333%;
+		}
+
+		.ff-9-lg {
+			width: 75%;
+		}
+
+		.ff-8-lg {
+			width: 66.667%;
+		}
+
+		.ff-7-lg {
+			width: 58.333%;
+		}
+
+		.ff-6-lg {
+			width: 50%;
+		}
+
+		.ff-5-lg {
+			width: 41.667%;
+		}
+
+		.ff-4-lg {
+			width: 33.333%;
+		}
+
+		.ff-3-lg {
+			width: 25%;
+		}
+
+		.ff-2-lg {
+			width: 16.667%;
+		}
+
+		.ff-1-lg {
+			width: 8.333%;
+		}
+
+		.ff-hidden-lg{
+			display:hidden;
+			visibility: none;
+		}
+
+		.ff-visible-lg{
+			display:flex;
+			visibility: visible;
+		}
+
+}
+
+
+/* Large */
+@media only screen and (min-width: 1200px){ 
+	    
+	/*	.ff-1g, .ff-2g, .ff-3g, .ff-4g, .ff-5g, .ff-6g, .ff-7g, .ff-8g, .ff-9g, .ff-10g, .ff-11g, .ff-12g{
+			width: 100%; 
+		}
+	*/
+		.ff-12-xl {
+			width: 100%;
+		}
+
+		.ff-11-xl {
+			width: 91.667%;
+		}
+		.ff-10-xl {
+			width: 83.333%;
+		}
+
+		.ff-9-xl {
+			width: 75%;
+		}
+
+		.ff-8-xl {
+			width: 66.667%;
+		}
+
+		.ff-7-xl {
+			width: 58.333%;
+		}
+
+		.ff-6-xl {
+			width: 50%;
+		}
+
+		.ff-5-xl {
+			width: 41.667%;
+		}
+
+		.ff-4-xl {
+			width: 33.333%;
+		}
+
+		.ff-3-xl {
+			width: 25%;
+		}
+
+		.ff-2-xl {
+			width: 16.667%;
+		}
+
+		.ff-1-xl {
+			width: 8.333%;
+		}
+
+		.ff-hidden-xl{
+			display:hidden;
+			visibility: none;
+		}
+
+		.ff-visible-xl{
+			display:flex;
+			visibility: visible;
+		}
+
+}
+
+/* Floats */
+
+.ff-float-right{
+	float:right;
+}
+
+
+.ff-float-left{
+	float:left;
+}
