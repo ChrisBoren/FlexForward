@@ -2,7 +2,7 @@
 
 Flex Forward: a front-end CSS 12 column grid framework
 Written by: Chris Boren (@ChrisBoren)
-Version: 0.0.2601021 Alpha
+Version: 0.0.160125 Alpha
 
 A simple CSS-Only front-end framework designed to speed up implemenatation of
 flexbox elements in a traditional responsive grid system.
@@ -334,7 +334,7 @@ Allignment Classes
 			width: 58.333%;
 		}
 
-		.ff-6-md {
+		.ff-6-md, {
 			width: 50%;
 		}
 
@@ -503,6 +503,31 @@ Allignment Classes
 		}
 
 }
+
+/* Text */
+
+.ff-text-right{
+	text-align:right;
+}
+
+.ff-text-left{
+	text-align:left;
+}
+
+.ff-text-center{
+	text-align:center;
+}
+
+/* Margins (may move) */
+
+.ff-top-2{
+	margin-top:2rem;
+}
+
+.ff-bottom-2{
+	margin-bottom:2rem;
+}
+
 
 /* Floats */
 
