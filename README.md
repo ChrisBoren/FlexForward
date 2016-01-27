@@ -3,6 +3,9 @@ A front-end 12 column grid CSS framework for quick design and development using 
 
 TODO: Readme. ^_^
 
+Usage:
+
+
 ## Goals
 - [ ] 12-column grid framework in the spirit of 960.gs and Twitter Bootstrap
 - [ ] Common breakpoints for mobile, desktop, and high resolution
