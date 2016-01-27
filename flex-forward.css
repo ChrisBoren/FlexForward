@@ -2,7 +2,7 @@
 
 Flex Forward: a front-end CSS 12 column grid framework
 Written by: Chris Boren (@ChrisBoren)
-Version: 0.0.160125 Alpha
+Version: 0.0.2601027 Alpha
 
 A simple CSS-Only front-end framework designed to speed up implemenatation of
 flexbox elements in a traditional responsive grid system.
@@ -40,6 +40,7 @@ limitations under the License.
 	align-self:flex-start;
 	align-content: flex-start;
 	flex-grow:0;
+
 }
 
 .ff-row{
@@ -112,6 +113,52 @@ limitations under the License.
 .ff-1g {
 	width: 8.333%;
 }
+
+/* Push*/
+
+.ff-push-11 {
+	margin-left: 91.667%;
+}
+.ff-push-10 {
+	margin-left: 83.333%;
+}
+
+.ff-push-9, .ff-push-75p {
+	margin-left: 75%;
+}
+
+.ff-push-8, .ff-push-67p {
+	margin-left: 66.667%;
+}
+
+.ff-push-7 {
+	margin-left: 58.333%;
+}
+
+.ff-push-6, .ff-push-50p{
+	margin-left: 50%;
+}
+
+.ff-push-5 {
+	margin-left: 41.667%;
+}
+
+.ff-push-4, .ff-push-33p {
+	margin-left: 33.333%;
+}
+
+.ff-push-3, .ff-push-25p {
+	margin-left: 25%;
+}
+
+.ff-push-2 {
+	margin-left: 16.667%;
+}
+
+.ff-push-1 {
+	margin-left: 8.333%;
+}
+
 
 .ff-visible-sm, .ff-visible-md, .ff-visible-lg, .ff-visible-xl{
 	display:none;
@@ -311,6 +358,8 @@ Allignment Classes
 			width: 100%; 
 		}
 	*/
+
+
 		.ff-12-md {
 			width: 100%;
 		}
@@ -334,7 +383,7 @@ Allignment Classes
 			width: 58.333%;
 		}
 
-		.ff-6-md, {
+		.ff-6-md {
 			width: 50%;
 		}
 
