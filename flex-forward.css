@@ -2,7 +2,7 @@
 
 Flex Forward: a front-end CSS 12 column grid framework
 Written by: Chris Boren (@ChrisBoren)
-Version: 0.0.2601027 Alpha
+Version: 0.0.1602011 Alpha
 
 A simple CSS-Only front-end framework designed to speed up implemenatation of
 flexbox elements in a traditional responsive grid system.
@@ -163,6 +163,7 @@ limitations under the License.
 .ff-visible-sm, .ff-visible-md, .ff-visible-lg, .ff-visible-xl{
 	display:none;
 	visibility: hidden;
+	
 }
 
 
@@ -179,9 +180,6 @@ Allignment Classes
 	text-align: right;
 }
 
-.ff-center{
-	text-align: center;
-}
 
 .ff-nowrap{
 	flex-wrap:nowrap;
@@ -274,6 +272,10 @@ Allignment Classes
 	align-content:stretch;
 }
 
+.ff-content-stretch li{
+	display:flex;
+}
+
 .ff-content-space-between{
 	align-content:space-between;
 }
@@ -338,8 +340,11 @@ Allignment Classes
 		}
 
 		.ff-hidden-sm{
-			display:hidden;
-			visibility: none;
+			display:none;
+			visibility: hidden;
+			width: 0; 
+			height: 0; 
+			line-height: 0;
 		}
 
 		.ff-visible-sm{
@@ -408,8 +413,11 @@ Allignment Classes
 		}
 
 		.ff-hidden-md{
-			display:hidden;
-			visibility: none;
+			display:none;
+			visibility: hidden;
+			width: 0; 
+			height: 0; 
+			line-height: 0;
 		}
 
 		.ff-visible-md{
@@ -475,8 +483,11 @@ Allignment Classes
 		}
 
 		.ff-hidden-lg{
-			display:hidden;
-			visibility: none;
+			display:none;
+			visibility: hidden;
+			width: 0; 
+			height: 0; 
+			line-height: 0;
 		}
 
 		.ff-visible-lg{
@@ -544,6 +555,9 @@ Allignment Classes
 		.ff-hidden-xl{
 			display:hidden;
 			visibility: none;
+			width: 0; 
+			height: 0; 
+			line-height: 0;
 		}
 
 		.ff-visible-xl{
@@ -554,14 +568,6 @@ Allignment Classes
 }
 
 /* Text */
-
-.ff-text-right{
-	text-align:right;
-}
-
-.ff-text-left{
-	text-align:left;
-}
 
 .ff-text-center{
 	text-align:center;
@@ -578,7 +584,7 @@ Allignment Classes
 }
 
 
-/* Floats */
+/* Floats - to remove? */
 
 .ff-float-right{
 	float:right;
