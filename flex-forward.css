@@ -2,7 +2,7 @@
 
 Flex Forward: a front-end CSS 12 column grid framework
 Written by: Chris Boren (@ChrisBoren)
-Version: 0.0.1602011 Alpha
+Version: 0.16.02.29.1 Alpha
 
 A simple CSS-Only front-end framework designed to speed up implemenatation of
 flexbox elements in a traditional responsive grid system.
@@ -55,6 +55,7 @@ limitations under the License.
 	flex-direction:column;
 	width:100%;
 	flex-wrap: wrap;
+	height:100%;
 }
 
 
@@ -161,7 +162,7 @@ limitations under the License.
 
 
 .ff-visible-sm, .ff-visible-md, .ff-visible-lg, .ff-visible-xl{
-	display:none;
+	xdisplay:none;
 	visibility: hidden;
 	
 }
@@ -180,6 +181,13 @@ Allignment Classes
 	text-align: right;
 }
 
+.ff-vertical-center{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	height:100%
+}
 
 .ff-nowrap{
 	flex-wrap:nowrap;
@@ -284,8 +292,17 @@ Allignment Classes
 	align-content:space-around;
 }
 
+/* Breakpoints
 
-/* Extra Small */
+Small 	< 480
+Medium 	=	480 - 767
+Large		= 768 - 1199
+XL 			>	1200
+
+*/
+
+
+/* Small */
 @media only screen and (max-width:479px){
 	    
 	/*	.ff-1g, .ff-2g, .ff-3g, .ff-4g, .ff-5g, .ff-6g, .ff-7g, .ff-8g, .ff-9g, .ff-10g, .ff-11g, .ff-12g{
@@ -339,23 +356,79 @@ Allignment Classes
 			width: 8.333%;
 		}
 
-		.ff-hidden-sm{
-			display:none;
-			visibility: hidden;
-			width: 0; 
-			height: 0; 
-			line-height: 0;
+		.ff-push-11-sm {
+			margin-left: 91.667%;
+		}
+		.ff-push-10-sm {
+			margin-left: 83.333%;
 		}
 
-		.ff-visible-sm{
-			display:flex;
-			visibility: visible;
+		.ff-push-9-sm, .ff-push-75p-sm {
+			margin-left: 75%;
+		}
+
+		.ff-push-8-sm, .ff-push-67p-sm {
+			margin-left: 66.667%;
+		}
+
+		.ff-push-7-sm {
+			margin-left: 58.333%;
+		}
+
+		.ff-push-6-sm, .ff-push-50p-sm{
+			margin-left: 50%;
+		}
+
+		.ff-push-5-sm {
+			margin-left: 41.667%;
+		}
+
+		.ff-push-4-sm, .ff-push-33p-sm {
+			margin-left: 33.333%;
+		}
+
+		.ff-push-3-sm, .ff-push-25p-sm {
+			margin-left: 25%;
+		}
+
+		.ff-push-2-sm {
+			margin-left: 16.667%;
+		}
+
+		.ff-push-1-sm {
+			margin-left: 8.333%;
 		}
 
 }
 
+@media only screen and (max-width:479px){
 
-/* Small */
+
+	.ff-hidden-sm{
+		display:none;
+		visibility: hidden;
+		width: 0; 
+		height: 0; 
+		line-height: 0;
+		overflow:hidden;
+	}
+
+	.ff-visible-md, .ff-visible-lg, .ff-visible-xl{
+		display:none;
+		visibility: hidden;
+		width: 0; 
+		height: 0; 
+		line-height: 0;
+	}
+
+	.ff-visible-sm{
+		display:auto;
+		visibility: visible;
+	}
+}
+
+
+/* Medium */
 
 @media only screen and (min-width: 480px){ 
 	    
@@ -412,22 +485,80 @@ Allignment Classes
 			width: 8.333%;
 		}
 
-		.ff-hidden-md{
-			display:none;
-			visibility: hidden;
-			width: 0; 
-			height: 0; 
-			line-height: 0;
+		.ff-push-11-md {
+			margin-left: 91.667%;
+		}
+		.ff-push-10-md {
+			margin-left: 83.333%;
 		}
 
-		.ff-visible-md{
-			display:flex;
-			visibility: visible;
+		.ff-push-9-md, .ff-push-75p-md {
+			margin-left: 75%;
+		}
+
+		.ff-push-8-md, .ff-push-67p-md {
+			margin-left: 66.667%;
+		}
+
+		.ff-push-7-md {
+			margin-left: 58.333%;
+		}
+
+		.ff-push-6-md, .ff-push-50p-md{
+			margin-left: 50%;
+		}
+
+		.ff-push-5-md {
+			margin-left: 41.667%;
+		}
+
+		.ff-push-4-md, .ff-push-33p-md {
+			margin-left: 33.333%;
+		}
+
+		.ff-push-3-md, .ff-push-25p-md {
+			margin-left: 25%;
+		}
+
+		.ff-push-2-md {
+			margin-left: 16.667%;
+		}
+
+		.ff-push-1-md {
+			margin-left: 8.333%;
 		}
 
 }
 
-/* Medium*/
+@media only screen and (min-width:480px) and (max-width:767px){
+
+
+	.ff-hidden-md{
+		display:none;
+		visibility: hidden;
+		width: 0; 
+		height: 0; 
+		line-height: 0;
+		overflow:hidden;
+	}
+
+
+	.ff-visible-sm, .ff-visible-lg, .ff-visible-xl{
+		display:none;
+		visibility: hidden;
+		width: 0; 
+		height: 0; 
+		line-height: 0;
+	}
+
+
+	.ff-visible-md{
+		display:auto;
+		visibility: visible;
+	}
+}
+
+/* Large */
 
 @media only screen and (min-width: 768px){ 
 	    
@@ -435,6 +566,13 @@ Allignment Classes
 			width: 100%; 
 		}
 	*/
+
+
+	.ff-visible-lg{
+		display:flex;
+		visibility: visible;
+	}
+
 		.ff-12-lg {
 			width: 100%;
 		}
@@ -482,29 +620,84 @@ Allignment Classes
 			width: 8.333%;
 		}
 
-		.ff-hidden-lg{
-			display:none;
-			visibility: hidden;
-			width: 0; 
-			height: 0; 
-			line-height: 0;
+		.ff-push-11-lg {
+			margin-left: 91.667%;
+		}
+		.ff-push-10-lg {
+			margin-left: 83.333%;
 		}
 
-		.ff-visible-lg{
-			display:flex;
-			visibility: visible;
+		.ff-push-9-lg, .ff-push-75p-lg {
+			margin-left: 75%;
+		}
+
+		.ff-push-8-lg, .ff-push-67p-lg {
+			margin-left: 66.667%;
+		}
+
+		.ff-push-7-lg {
+			margin-left: 58.333%;
+		}
+
+		.ff-push-6-lg, .ff-push-50p-lg{
+			margin-left: 50%;
+		}
+
+		.ff-push-5-lg {
+			margin-left: 41.667%;
+		}
+
+		.ff-push-4-lg, .ff-push-33p-lg {
+			margin-left: 33.333%;
+		}
+
+		.ff-push-3-lg, .ff-push-25p-lg {
+			margin-left: 25%;
+		}
+
+		.ff-push-2-lg {
+			margin-left: 16.667%;
+		}
+
+		.ff-push-1-lg {
+			margin-left: 8.333%;
 		}
 
 }
 
+@media only screen and (min-width: 768px) and (max-width:1199px){
+	
 
-/* Large */
+	.ff-hidden-lg{
+		display:none;
+		visibility: hidden;
+		width: 0; 
+		height: 0; 
+		line-height: 0;
+		overflow:hidden;
+	}
+
+
+	.ff-visible-sm, .ff-visible-md, .ff-visible-xl{
+		display:none;
+		visibility: hidden;
+		width: 0; 
+		height: 0; 
+		line-height: 0;
+	}
+}
+
+
+/* XL */
 @media only screen and (min-width: 1200px){ 
 	    
 	/*	.ff-1g, .ff-2g, .ff-3g, .ff-4g, .ff-5g, .ff-6g, .ff-7g, .ff-8g, .ff-9g, .ff-10g, .ff-11g, .ff-12g{
 			width: 100%; 
 		}
 	*/
+
+
+
 		.ff-12-xl {
 			width: 100%;
 		}
@@ -552,17 +745,70 @@ Allignment Classes
 			width: 8.333%;
 		}
 
-		.ff-hidden-xl{
-			display:hidden;
-			visibility: none;
-			width: 0; 
-			height: 0; 
+		.ff-push-11-xl {
+			margin-left: 91.667%;
+		}
+		.ff-push-10-xl {
+			margin-left: 83.333%;
+		}
+
+		.ff-push-9-xl, .ff-push-75p-xl {
+			margin-left: 75%;
+		}
+
+		.ff-push-8-xl, .ff-push-67p-xl {
+			margin-left: 66.667%;
+		}
+
+		.ff-push-7-xl {
+			margin-left: 58.333%;
+		}
+
+		.ff-push-6-xl, .ff-push-50p-xl{
+			margin-left: 50%;
+		}
+
+		.ff-push-5-xl {
+			margin-left: 41.667%;
+		}
+
+		.ff-push-4-xl, .ff-push-33p-xl {
+			margin-left: 33.333%;
+		}
+
+		.ff-push-3-xl, .ff-push-25p-xl {
+			margin-left: 25%;
+		}
+
+		.ff-push-2-xl {
+			margin-left: 16.667%;
+		}
+
+		.ff-push-1-xl {
+			margin-left: 8.333%;
+		}
+
+
+		.ff-visible-md, .ff-visible-lg, .ff-visible-sm{
+			display:none;
+			visibility: hidden;
 			line-height: 0;
 		}
 
 		.ff-visible-xl{
 			display:flex;
 			visibility: visible;
+		}
+
+
+
+		.ff-hidden-xl{
+			display:none;
+			visibility: hidden;
+			line-height: 0;
+			width:0;
+		 	height:0;
+			overflow:hidden;
 		}
 
 }
