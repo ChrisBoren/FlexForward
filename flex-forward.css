@@ -2,7 +2,7 @@
 
 Flex Forward: a front-end CSS 12 column grid framework
 Written by: Chris Boren (@ChrisBoren)
-Version: 0.16.02.29.1 Alpha
+Version: 0.16.04.10.1 Alpha
 
 A simple CSS-Only front-end framework designed to speed up implemenatation of
 flexbox elements in a traditional responsive grid system.
@@ -10,7 +10,7 @@ flexbox elements in a traditional responsive grid system.
 Supported Browsers: Edge, Safari (Webkit), Chrome, FireFox, and Opera.
 
 ----------
-Copyright and License 
+Copyright and License
 Copyright 2015 Christopher Boren
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -164,7 +164,7 @@ limitations under the License.
 .ff-visible-sm, .ff-visible-md, .ff-visible-lg, .ff-visible-xl{
 	xdisplay:none;
 	visibility: hidden;
-	
+
 }
 
 
@@ -292,6 +292,14 @@ Allignment Classes
 	align-content:space-around;
 }
 
+.ff-row-reverse{
+	flex-direction: row-reverse;
+}
+
+.ff-column-reverse{
+	flex-direction: column-reverse;
+}
+
 /* Breakpoints
 
 Small 	< 480
@@ -304,9 +312,9 @@ XL 			>	1200
 
 /* Small */
 @media only screen and (max-width:479px){
-	    
+
 	/*	.ff-1g, .ff-2g, .ff-3g, .ff-4g, .ff-5g, .ff-6g, .ff-7g, .ff-8g, .ff-9g, .ff-10g, .ff-11g, .ff-12g{
-			width: 100%; 
+			width: 100%;
 		}
 	*/
 		.ff-12-sm {
@@ -407,8 +415,8 @@ XL 			>	1200
 	.ff-hidden-sm{
 		display:none;
 		visibility: hidden;
-		width: 0; 
-		height: 0; 
+		width: 0;
+		height: 0;
 		line-height: 0;
 		overflow:hidden;
 	}
@@ -416,8 +424,8 @@ XL 			>	1200
 	.ff-visible-md, .ff-visible-lg, .ff-visible-xl{
 		display:none;
 		visibility: hidden;
-		width: 0; 
-		height: 0; 
+		width: 0;
+		height: 0;
 		line-height: 0;
 	}
 
@@ -430,10 +438,10 @@ XL 			>	1200
 
 /* Medium */
 
-@media only screen and (min-width: 480px){ 
-	    
+@media only screen and (min-width: 480px){
+
 	/*	.ff-1g, .ff-2g, .ff-3g, .ff-4g, .ff-5g, .ff-6g, .ff-7g, .ff-8g, .ff-9g, .ff-10g, .ff-11g, .ff-12g{
-			width: 100%; 
+			width: 100%;
 		}
 	*/
 
@@ -536,8 +544,8 @@ XL 			>	1200
 	.ff-hidden-md{
 		display:none;
 		visibility: hidden;
-		width: 0; 
-		height: 0; 
+		width: 0;
+		height: 0;
 		line-height: 0;
 		overflow:hidden;
 	}
@@ -546,8 +554,8 @@ XL 			>	1200
 	.ff-visible-sm, .ff-visible-lg, .ff-visible-xl{
 		display:none;
 		visibility: hidden;
-		width: 0; 
-		height: 0; 
+		width: 0;
+		height: 0;
 		line-height: 0;
 	}
 
@@ -560,10 +568,10 @@ XL 			>	1200
 
 /* Large */
 
-@media only screen and (min-width: 768px){ 
-	    
+@media only screen and (min-width: 768px){
+
 	/*	.ff-1g, .ff-2g, .ff-3g, .ff-4g, .ff-5g, .ff-6g, .ff-7g, .ff-8g, .ff-9g, .ff-10g, .ff-11g, .ff-12g{
-			width: 100%; 
+			width: 100%;
 		}
 	*/
 
@@ -666,13 +674,13 @@ XL 			>	1200
 }
 
 @media only screen and (min-width: 768px) and (max-width:1199px){
-	
+
 
 	.ff-hidden-lg{
 		display:none;
 		visibility: hidden;
-		width: 0; 
-		height: 0; 
+		width: 0;
+		height: 0;
 		line-height: 0;
 		overflow:hidden;
 	}
@@ -681,18 +689,18 @@ XL 			>	1200
 	.ff-visible-sm, .ff-visible-md, .ff-visible-xl{
 		display:none;
 		visibility: hidden;
-		width: 0; 
-		height: 0; 
+		width: 0;
+		height: 0;
 		line-height: 0;
 	}
 }
 
 
 /* XL */
-@media only screen and (min-width: 1200px){ 
-	    
+@media only screen and (min-width: 1200px){
+
 	/*	.ff-1g, .ff-2g, .ff-3g, .ff-4g, .ff-5g, .ff-6g, .ff-7g, .ff-8g, .ff-9g, .ff-10g, .ff-11g, .ff-12g{
-			width: 100%; 
+			width: 100%;
 		}
 	*/
 
