@@ -2,7 +2,7 @@
 
 Flex Forward: a front-end CSS 12 column grid framework
 Written by: Chris Boren (@ChrisBoren)
-Version: 0.16.04.10.1 Alpha
+Version: 0.16.05.30.1 Alpha
 
 A simple CSS-Only front-end framework designed to speed up implemenatation of
 flexbox elements in a traditional responsive grid system.
@@ -30,29 +30,58 @@ limitations under the License.
 /* Set up containers, rows, and columns */
 
 .ff-flex{
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 	display:flex;
+	/*Extra flex displays for max browser compatibility*/
 }
 
 .ff-container{
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 	display:flex;
+	/*Extra flex displays for max browser compatibility*/
 	flex-direction:column;
+	-webkit-flex-direction: column;
 	width:100%;
 	align-self:flex-start;
+	-webkit-align-self:flex-start;
 	align-content: flex-start;
+	-webkit-align-content: flex-start;
 	flex-grow:0;
 
 }
 
 .ff-row{
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 	display:flex;
+	/*Extra flex displays for max browser compatibility*/
 	flex-direction:row;
+	-webkit-flex-direction:row;
 	width:100%;
 	flex-wrap: wrap;
 }
 
 .ff-column{
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 	display:flex;
+	/*Extra flex displays for max browser compatibility*/
 	flex-direction:column;
+	-webkit-flex-direction:column;
 	width:100%;
 	flex-wrap: wrap;
 	height:100%;
@@ -185,6 +214,7 @@ Allignment Classes
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	-webkit-flex-direction: column;
 	text-align: center;
 	height:100%
 }
@@ -197,107 +227,137 @@ Allignment Classes
 
 .ff-start{
 	justify-content:flex-start;
+	-webkit-justify-content: flex-start;
 }
 
 .ff-end{
 	justify-content:flex-end;
+	-webkit-justify-content: flex-end;
 }
 
 .ff-center{
 	justify-content:center;
+	-webkit-justify-content: center;
 }
 
 .ff-space-between{
 	justify-content:space-between;
+	-webkit-justify-content: space-between;
 }
 
 .ff-space-around{
 	justify-content:space-around;
+	-webkit-justify-content: space-around;
 }
 
 .ff-justify{
 	flex-grow:1;
+	-webkit-flex-grow:1;
 }
 
 /* Align Self */
 .ff-self-start{
 	align-self:flex-start;
+	-webkit-align-self:flex-start;
 }
 
 .ff-self-end{
 	align-self:flex-end;
+	-webkit-align-self:flex-end;
 }
 
 .ff-self-center{
 	align-self:center;
+	-webkit-align-self:center;
 }
 
 .ff-self-stretch{
 	align-self:stretch;
+	-webkit-align-self:stretch;
 }
 
 .ff-self-baseline{
 	align-self:baseline;
+	-webkit-align-self:baseline;
 }
 
 /* Align Itms*/
 
 .ff-items-start{
 	align-items:flex-start;
+	-webkit-align-items:flex-start;
 }
 
 .ff-items-end{
 	align-items:flex-end;
+	-webkit-align-items:flex-end;
 }
 
 .ff-items-center{
-	align-items:center;
+	align-items:center; /* centers items vertically... */
+	-webkit-align-items:center;
 }
 
 .ff-items-stretch{
 	align-items:stretch;
+	-webkit-align-items:stretch;
 }
 
 .ff-items-baseline{
 	align-items:baseline;
+	-webkit-align-items:baseline;
 }
 
 /* Align Content */
 
 .ff-content-start{
 	align-content:flex-start;
+	-webkit-align-content: flex-start;
 }
 
 .ff-content-end{
 	align-content:flex-end;
+	-webkit-align-content: flex-end;
 }
 
 .ff-content-center{
 	align-content:center;
+	-webkit-align-content: center;
 }
 
 .ff-content-stretch{
 	align-content:stretch;
+	-webkit-align-content: stretch;
 }
 
 .ff-content-stretch li{
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 	display:flex;
+	/*Extra flex displays for max browser compatibility*/
 }
 
 .ff-content-space-between{
 	align-content:space-between;
+	-webkit-align-content: space-between;
 }
 
 .ff-content-space-around{
 	align-content:space-around;
+	-webkit-align-content: space-around;
 }
 
 .ff-row-reverse{
 	flex-direction: row-reverse;
+	-webkit-flex-direction: row-reverse;
 }
 
 .ff-column-reverse{
 	flex-direction: column-reverse;
+	-webkit-flex-direction: column-reverse;
 }
 
 /* Breakpoints
@@ -577,7 +637,13 @@ XL 			>	1200
 
 
 	.ff-visible-lg{
+
+	  display: -webkit-box;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
 		display:flex;
+		/*Extra flex displays for max browser compatibility*/
 		visibility: visible;
 	}
 
@@ -804,7 +870,13 @@ XL 			>	1200
 		}
 
 		.ff-visible-xl{
+
+		  display: -webkit-box;
+		  display: -moz-box;
+		  display: -ms-flexbox;
+		  display: -webkit-flex;
 			display:flex;
+			/*Extra flex displays for max browser compatibility*/
 			visibility: visible;
 		}
 
